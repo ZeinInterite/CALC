@@ -40,10 +40,10 @@ class SplashScreenActivity : AppCompatActivity() {
             override fun run() {
                 val currentItem = viewPager.currentItem
                 viewPager.setCurrentItem((currentItem + 1) % imageList.size, true)
-                handler.postDelayed(this, 150) // Скорость переключения в миллисекундах
+                handler.postDelayed(this, 1) // Скорость переключения в миллисекундах
             }
         }
-        handler.postDelayed(runnable, 500)
+        handler.postDelayed(runnable, 5)
 
         // Переход на MainActivity спустя 2000 мс
         val intent = Intent(this, MainActivity::class.java)
