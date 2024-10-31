@@ -23,11 +23,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setUpView() // Установка представлений
+        setUpView()
     }
 
     private fun setUpView() {
-        // Обработка нажатий кнопок и добавление значений в поле ввода
         binding.buttonClear.setOnClickListener {
             binding.input.text = " "// Очистка поля ввода
             binding.output.text = " "// Очистка поля вывода
